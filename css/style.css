@@ -1,0 +1,84 @@
+body {
+  font-family: 'Open Sans';
+}
+
+.btn-default {
+  font: 800 12px/17px 'Open Sans';
+  padding: 20px 55px;
+  border-radius: 30px;
+  border: 1px solid #FFFFFF;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.btn-default:hover {
+  text-decoration: none;
+}
+
+.btn-default.white {
+  background-color: #fff;
+  color: #ED5B1D;
+}
+
+section.slides {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F4F4 100%);
+  box-shadow: 0 2px 8px 0 rgba(150, 150, 150, 0.5);
+  min-height: 950px;
+}
+
+section#topo {
+  background-color: #00305D;
+}
+
+section#topo div.title {
+  min-height: 300px;
+  text-align: center;
+  color: #fff;
+  padding: 95px 0 0 0;
+  min-height: 330px;
+}
+
+section#topo div.buttons {
+  margin-top: 35px;
+}
+
+section#topo div.buttons .btn-default {
+  margin: 0 8px;
+}
+
+section#topo .anuncie {
+  min-height: 280px;
+  padding: 60px 0;
+  color: #fff;
+}
+
+section#topo .anuncie .anun-title {
+  text-align: center;
+}
+
+section#topo .anuncie .anun-title p {
+  margin: 80px 0 0;
+  font: italic 700 28px/38px 'Open Sans';
+}
+
+section#topo .anuncie .anun-content p {
+  margin: 15px 0 0;
+  font: 400 16px/28px 'Open Sans';
+}
+
+section#sites {
+  border-bottom: 5px solid #F0F0F0;
+}
+
+section#sites .logo-list {
+  text-align: center;
+  padding: 20px 0;
+}
+
+section#sites .logo-list a {
+  display: inline-block;
+  margin: 0 25px;
+}
