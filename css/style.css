@@ -24,6 +24,7 @@ body {
 
 .btn-default:hover, .btn-default:active, .btn-default:visited, .btn-default:focus {
   text-decoration: none;
+  color: inherit;
 }
 
 .btn-default.white {
