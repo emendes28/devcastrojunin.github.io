@@ -111,7 +111,6 @@ section#sites{
 }
 section.slides{
 	background: linear-gradient(180deg, $color-white 0%, #F4F4F4 100%);
-	box-shadow: 0 2px 8px 0 rgba(150,150,150,0.5);
 	min-height: 880px;
     padding-top: 50px;
 
@@ -323,6 +322,31 @@ section.slides{
 				background-color: $color-blue;
 				border-color: $color-blue;
 				color: $color-blue;
+			}
+		}
+	}
+}
+
+// Responsivo
+@media (max-width: 1440px){
+	section.slides{
+		.control-arrows{
+
+			a{
+				&.prev{
+					left: -20px;
+
+					&:hover{
+						left: -30px;
+					}
+				}
+				&.next{
+					right: -20px;
+
+					&:hover{
+						right: -30px;
+					}
+				}
 			}
 		}
 	}

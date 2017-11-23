@@ -112,7 +112,6 @@ section#sites .logo-list a {
 
 section.slides {
   background: linear-gradient(180deg, #fff 0%, #F4F4F4 100%);
-  box-shadow: 0 2px 8px 0 rgba(150, 150, 150, 0.5);
   min-height: 880px;
   padding-top: 50px;
 }
@@ -334,4 +333,19 @@ section.slides div#nav span.cycle-pager-active {
   background-color: #0D4491;
   border-color: #0D4491;
   color: #0D4491;
+}
+
+@media (max-width: 1440px) {
+  section.slides .control-arrows a.prev {
+    left: -20px;
+  }
+  section.slides .control-arrows a.prev:hover {
+    left: -30px;
+  }
+  section.slides .control-arrows a.next {
+    right: -20px;
+  }
+  section.slides .control-arrows a.next:hover {
+    right: -30px;
+  }
 }
