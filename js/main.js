@@ -1,12 +1,16 @@
 jQuery(document).ready(function($) {
-	$('.slides').cycle({
-	    speed: 600,
-	    manualSpeed: 100,
+	$('.slides .container').cycle({
+	    speed: 500,
 	    fx: "fade",
-	    timeout: 2000,
+	    timeout: 7000,
 	    slides: "> section",
 	    pager:   '#nav',
 	    next: "#next",
 	    prev: "#prev"
+	});
+
+	$('.select-item').on('click', function(event) {
+		event.preventDefault();
+		$(this).toggleClass('active');
 	});
 });

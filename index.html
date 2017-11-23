@@ -10,7 +10,9 @@
 			<link rel="manifest" href="site.webmanifest">
 			<link rel="apple-touch-icon" href="icon.png">
 			<!-- Place favicon.ico in the root directory -->
-			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">		
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">	
+			<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" href="css/animate.css">
 			<link rel="stylesheet" href="css/style.css">
@@ -77,34 +79,34 @@
 				</section><!-- Fim: sites -->	
 
 				<section class="slides">
-					<div class="container">
-						<section id="produto">
+					<div class="container" data-cycle-auto-height="container">
+						<section id="home">
 							<div class="row slider-header">
 								<div class="col-md-12">
-									<h3>Formato Display <span>Home principal</span></h3>
-									<a href="#" class="btn-default">
-										<i class="icon-check"></i>TENHO INTERESSE
+									<h3>FORMATO DISPLAY<span>Home principal</span></h3>
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
 									</a>
 								</div>
 							</div>
 							<div class="row slider-content">
-								<div class="col-md-12">
+								<div class="col-md-12 text-center">
 									<h4>
 										Mais de <span>400 mil Pageviews </span> diários
 									</h4>
 								</div>
-								<div class="col-md-6">
-									<img src="images/home-img-1.png" alt="" class="img-shadow">
+								<div class="col-md-6 item">
+									<img src="images/formato-display/tela1.png" alt="" class="img-shadow">
 									<strong class="title">SUPERBANNER</strong>
 									<p>
 										Extensão: .JPG, .GIF, HTML5<br/>
 										Tamanho: 728x90 pixels<br/>
 										Peso máximo: 50kb<br/>
-										Posição: top / bottom;
+										Posição: top / bottom
 									</p>
 								</div>
-								<div class="col-md-6">
-									<img src="images/home-img-2.png" alt="" class="img-shadow">
+								<div class="col-md-6 item">
+									<img src="images/formato-display/tela2.png" alt="" class="img-shadow">
 									<strong class="title">RETÂNGULO</strong>
 									<p>
 										Extensão: .JPG, .GIF, HTML5<br/>
@@ -115,7 +117,82 @@
 								</div>																	
 							</div>
 						</section>
+						
+						<section id="paginaDeProduto">
+							<div class="row slider-header">
+								<div class="col-md-12">
+									<h3>PÁGINA DE PRODUTO<span>Sua exposição na página de produtos</span></h3>
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
+								</div>
+							</div>
+							<div class="row slider-content">
+								<div class="col-md-6">
+									<h4 class="medium">
+										Mais de <span>350 mil páginas</span><br/> diferentes de <span>3 sites</span>,<br/> que podem ser patrocinadas conforme a necessidade
+									</h4>
+									<div class="img-desc">
+										<strong class="title">SUPERBANNER</strong>
+										<p>
+											Extensão: .JPG, .GIF, HTML5<br/>
+											Tamanho: 728x90 pixels<br/>
+											Peso máximo: 50kb<br/>
+											Posição: top / bottom
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6 text-center">
+									<img src="images/pagina-de-produtos/tela1.png" alt="" class="img-shadow">									
+								</div>																	
+							</div>
+						</section>
+
+						<section id="busca">
+							<div class="row slider-header">
+								<div class="col-md-12">
+									<h3>BUSCA<span>Você no resultado da busca</span></h3>
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
+								</div>
+							</div>
+							<div class="row slider-content">
+								<div class="col-md-12 text-center">
+									<h4 class="medium">
+										<span>Lista de palavras-chave referente ao produto</span> da<br/> campanha para impactar quem buscou em nossos sites
+									</h4>
+								</div>
+								<div class="col-md-12 text-center box-img-floating">
+									<img src="images/busca/ic-busca.svg" alt="" class="img1">
+									<img src="images/busca/tela1.png" alt="" class="img-shadow img2">
+									<img src="images/busca/tela2.png" alt="" class="img-shadow img3">
+									<img src="images/busca/tela3.png" alt="" class="img-shadow img4">
+								</div>																
+							</div>
+						</section>
+
+						<!-- Setas de navegação -->
+						<div class="control-arrows">
+							<a href="#" class="prev">
+								<span id="prev"></span>
+							</a> 
+					        <a href="#" class="next">
+					        	<span id="next"></span>
+					        </a>
+						</div>
 					</div>
+
+					<!-- Bullets de navegação -->
+					<div class="control-bullets">
+				        <div class="container">
+				        	<div id="nav"></div>
+				        	<a data-fancybox data-src="#animatedModal" href="javascript:;" class="btn-default green">
+				        		(8) SOLICITAR CONTATO
+				        	</a>
+				        </div>					
+					</div>
+
 					<!-- <section id="busca">ghj</section>
 					<section id="mkt">jk</section>
 					<section id="produtosPatrocinados">fgh</section>
@@ -123,19 +200,15 @@
 					<section id="redesSociais">fgh</section>
 					<section id="mobileDestaque">werwer</section> -->
 				</section>
-				<div class="controls">
-					<a href="#">
-						<span id="prev"><</span>
-					</a> 
-			        <a href="#">
-			        	<span id="next">></span>
-			        </a>
-			        <ul id="nav"></ul>
-				</div>
 			</div>
 
-           <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-           <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+			<div style="display: none;" id="animatedModal" class="animated-modal">
+				<h2>Hello!</h2>
+				<p>This is animated content! Cool, right?</p>
+			</div>
+
+           <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+           <script src="js/jquery.fancybox.min.js"></script>
            <script src="js/jquery.cycle2.js"></script>
            <script src="js/main.js"></script>
    
