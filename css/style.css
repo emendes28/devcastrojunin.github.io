@@ -67,6 +67,13 @@ section#topo div.title {
   min-height: 400px;
 }
 
+section#topo div.title .title-box span {
+  font: 400 18px/24px 'Open Sans';
+  color: #fff;
+  display: inline-block;
+  margin-top: 10px;
+}
+
 section#topo div.buttons {
   margin-top: 35px;
 }
@@ -180,48 +187,6 @@ section.slides .slider-content div.item p {
   color: #4B4B4B;
 }
 
-section.slides .control-arrows {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-section.slides .control-arrows a {
-  display: inline-block;
-  font-size: 60px;
-  color: #4B4B4B;
-  position: relative;
-  transition: all 0.25s ease-in-out 0s;
-}
-
-section.slides .control-arrows a span {
-  display: inline-block;
-  width: 27px;
-  height: 100px;
-}
-
-section.slides .control-arrows a.prev {
-  float: left;
-  background: url("../images/img-nav-esq.png") no-repeat 0 0;
-  left: -120px;
-}
-
-section.slides .control-arrows a.prev:hover {
-  left: -130px;
-}
-
-section.slides .control-arrows a.next {
-  float: right;
-  background: url("../images/img-nav-dir.png") no-repeat 0 0;
-  right: -120px;
-}
-
-section.slides .control-arrows a.next:hover {
-  right: -130px;
-}
-
 section.slides section .slider-content {
   padding: 0 60px;
 }
@@ -294,6 +259,73 @@ section.slides section#busca .slider-content .box-img-floating img.img4 {
   top: 45px;
   left: 630px;
   z-index: 40;
+}
+
+section.slides section#emailMkt .slider-content {
+  min-height: 600px;
+}
+
+section.slides section#emailMkt .slider-content .texts {
+  float: left;
+  min-width: 215px;
+  margin-right: 15px;
+}
+
+section.slides section#emailMkt .slider-content .texts p {
+  font-size: 22px;
+  line-height: 22px;
+  color: #4B4B4B;
+}
+
+section.slides section#emailMkt .slider-content .texts p strong {
+  font: 700 44px/50px 'Open Sans';
+  color: #ED5B1D;
+}
+
+section.slides section#emailMkt .slider-content div.box-content {
+  margin-top: 40px;
+}
+
+section.slides .control-arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+section.slides .control-arrows a {
+  display: inline-block;
+  font-size: 60px;
+  color: #4B4B4B;
+  position: relative;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+section.slides .control-arrows a span {
+  display: inline-block;
+  width: 27px;
+  height: 100px;
+}
+
+section.slides .control-arrows a.prev {
+  float: left;
+  background: url("../images/img-nav-esq.png") no-repeat 0 0;
+  left: -120px;
+}
+
+section.slides .control-arrows a.prev:hover {
+  left: -130px;
+}
+
+section.slides .control-arrows a.next {
+  float: right;
+  background: url("../images/img-nav-dir.png") no-repeat 0 0;
+  right: -120px;
+}
+
+section.slides .control-arrows a.next:hover {
+  right: -130px;
 }
 
 section.slides div.control-bullets {
