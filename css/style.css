@@ -187,6 +187,10 @@ section.slides .slider-content div.item p {
   color: #4B4B4B;
 }
 
+section.slides section {
+  width: 100%;
+}
+
 section.slides section .slider-content {
   padding: 0 60px;
 }
@@ -284,6 +288,51 @@ section.slides section#emailMkt .slider-content .texts p strong {
 
 section.slides section#emailMkt .slider-content div.box-content {
   margin-top: 40px;
+}
+
+section.slides section#produtosPatrocinados .slider-content {
+  min-height: 730px;
+  margin-top: 15px;
+}
+
+section.slides section#produtosPatrocinados .slider-content h4 {
+  margin: 190px 0 0;
+}
+
+section.slides section#produtosPatrocinados .slider-content h5 {
+  font: 300 24px/32px 'Open Sans';
+  margin-top: 25px;
+}
+
+section.slides section#midiaExterna .slider-content {
+  min-height: 760px;
+}
+
+section.slides section#midiaExterna .slider-content h4 {
+  margin: 30px 0 95px;
+}
+
+section.slides section#midiaExterna .slider-content .texts {
+  margin-top: 15px;
+}
+
+section.slides section#midiaExterna .slider-content .texts.last {
+  margin-top: 130px;
+}
+
+section.slides section#midiaExterna .slider-content .texts + .texts {
+  margin-top: 45px;
+}
+
+section.slides section#midiaExterna .slider-content h5 {
+  font: 700 22px/32px 'Open Sans';
+  margin: 0 0 10px;
+  color: #ED5B1D;
+}
+
+section.slides section#midiaExterna .slider-content p {
+  font: 300 20px/32px 'Open Sans';
+  margin: 0;
 }
 
 section.slides .control-arrows {
