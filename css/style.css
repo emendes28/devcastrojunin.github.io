@@ -2,6 +2,10 @@ body {
   font-family: 'Open Sans';
 }
 
+a:hover, a:visited, a:focus {
+  text-decoration: none;
+}
+
 .img-shadow {
   box-shadow: 0 6px 8px 0 rgba(144, 144, 144, 0.5);
 }
@@ -55,6 +59,86 @@ body {
 
 .text-right {
   text-align: right;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 600;
+  background-color: #fff;
+}
+
+.menu div.title {
+  margin: 35px 0;
+}
+
+.menu div.title span {
+  font: 400 18px/24px 'Open Sans';
+}
+
+.menu div.list-navigation {
+  display: none;
+}
+
+.menu div.list-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu div.list-navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.menu div.list-navigation ul li a {
+  text-align: center;
+  border: 1px solid #d5e0eb;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px;
+  font: 400 16px/22px 'Open Sans';
+  color: #4B4B4B;
+}
+
+.menu div.list-navigation ul li a:hover {
+  text-decoration: none;
+}
+
+.menu div.actions {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid #d5e0eb;
+}
+
+.menu div.actions a.navigation {
+  display: inline-block;
+  font: 400 14px/17px 'Open Sans';
+  color: #4B4B4B;
+}
+
+.menu div.actions a.navigation:hover {
+  text-decoration: none;
+}
+
+div#layer {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+}
+
+div#wrap {
+  position: relative;
 }
 
 section#topo {
@@ -123,9 +207,8 @@ section#sites .logo-list a {
 }
 
 section.slides {
-  background: linear-gradient(180deg, #fff 0%, #F4F4F4 100%);
   min-height: 880px;
-  padding-top: 50px;
+  padding-bottom: 65px;
 }
 
 section.slides .slider-header {
@@ -193,19 +276,16 @@ section.slides .slider-content div.item p {
 
 section.slides section {
   width: 100%;
+  padding: 60px 0;
+  background: linear-gradient(180deg, #fff 0%, #F4F4F4 100%);
 }
 
 section.slides section .slider-content {
   padding: 0 60px;
 }
 
-section.slides section#home .slider-content {
-  min-height: 880px;
-}
-
 section.slides section#paginaDeProduto .slider-content {
   margin-top: 35px;
-  min-height: 760px;
 }
 
 section.slides section#paginaDeProduto .slider-content h4 {
@@ -231,12 +311,9 @@ section.slides section#busca {
   width: 100%;
 }
 
-section.slides section#busca .slider-content {
-  min-height: 760px;
-}
-
 section.slides section#busca .slider-content .box-img-floating {
   position: relative;
+  min-height: 430px;
 }
 
 section.slides section#busca .slider-content .box-img-floating img {
@@ -269,10 +346,6 @@ section.slides section#busca .slider-content .box-img-floating img.img4 {
   z-index: 40;
 }
 
-section.slides section#emailMkt .slider-content {
-  min-height: 600px;
-}
-
 section.slides section#emailMkt .slider-content .texts {
   float: left;
   min-width: 215px;
@@ -295,7 +368,6 @@ section.slides section#emailMkt .slider-content div.box-content {
 }
 
 section.slides section#produtosPatrocinados .slider-content {
-  min-height: 730px;
   margin-top: 15px;
 }
 
@@ -306,10 +378,6 @@ section.slides section#produtosPatrocinados .slider-content h4 {
 section.slides section#produtosPatrocinados .slider-content h5 {
   font: 300 24px/32px 'Open Sans';
   margin-top: 25px;
-}
-
-section.slides section#midiaExterna .slider-content {
-  min-height: 760px;
 }
 
 section.slides section#midiaExterna .slider-content h4 {
@@ -337,10 +405,6 @@ section.slides section#midiaExterna .slider-content h5 {
 section.slides section#midiaExterna .slider-content p {
   font: 300 20px/32px 'Open Sans';
   margin: 0;
-}
-
-section.slides section#redesSociais .slider-content {
-  min-height: 700px;
 }
 
 section.slides section#redesSociais .slider-content h4 {
@@ -388,7 +452,6 @@ section.slides section#redesSociais .slider-content .box-content div.desc-text s
 }
 
 section.slides section#mobile .slider-content {
-  min-height: 700px;
   padding: 0 30px;
 }
 
@@ -405,6 +468,18 @@ section.slides section#mobile .slider-content h5 {
 section.slides section#mobile .slider-content p {
   font: 300 18px/32px 'Open Sans';
   margin: 0;
+}
+
+section.slides section#mobile .slider-content .last p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 45px;
+  font-weight: 400;
+}
+
+section.slides section#mobile .slider-content .last p i {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 section.slides .control-arrows {
