@@ -12,6 +12,8 @@ body{
 a{
 	&:hover, &:visited, &:focus{
 		text-decoration: none;
+		outline: none; 
+		outline: 0;
 	}
 }
 .img-shadow{
@@ -63,6 +65,62 @@ a{
 .text-right{
 	text-align: right;
 }
+.animated-modal{
+	border-radius: 8px;	
+}
+#selectedItemList{
+	width  : 600px;
+	max-width  : 600px;
+	margin: 0;
+
+	h2{
+		font: 400 24px/33px 'Open Sans';
+		color: $color-gray;
+		margin: 0 0 35px;
+		text-align: center;
+	}
+
+	ul#itemsSelected{
+		margin: 0; 
+		padding: 0;
+
+		li{
+			list-style: none;
+			padding: 20px;
+			border: 1px solid #dddddd;
+			border-radius: 4px;
+			font: 400 16px/22px 'Open Sans';
+			position: relative;
+			margin-top: 10px;
+
+			i{
+				display: flex;
+				justify-content: center;
+				align-items: center; 
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				border: 1px solid #dddddd;
+				border-radius: 4px;
+				width: 40px;
+				height: 42px;
+				font-size: 20px;
+				cursor: pointer;
+				transition: all 0.25s ease-in-out 0s;
+
+				&:hover{
+					background-color: $color-orange;
+					color: $color-white;
+					border-color: $color-orange;
+				}
+			}
+		}
+	}
+	div.controls{
+		margin-top: 20px;
+		text-align: center;
+	}
+}
 
 // Menu
 .menu{
@@ -72,6 +130,11 @@ a{
 	bottom: 0;
 	z-index: 600;
 	background-color: $color-white;
+	transition: 0.25s ease-in-out 0s;
+
+	&.menu-hidden{
+		transform: translateY(71px);
+	}
 
 	div.title{
 		margin: 35px 0;
@@ -95,15 +158,20 @@ a{
 				a{
 					text-align: center;
 					border: 1px solid #d5e0eb;
+					border-radius: 4px;
 					display: inline-block;
 					box-sizing: border-box;
 					width: 100%;
 					padding: 25px;
 					font: 400 16px/22px 'Open Sans';
 					color: $color-gray;
+					transition: 0.25s ease-in-out 0s;
 
 					&:hover{
 						text-decoration: none;
+						background-color: $color-orange;
+						border-color: $color-orange;
+						color: $color-white;
 					}
 				}
 			}
@@ -113,7 +181,8 @@ a{
 		width: 100%;
 		padding: 25px 0;
 		text-align: center;
-		border-top: 1px solid #d5e0eb;		
+		border-top: 1px solid #d5e0eb;	
+		position: relative;	
 		
 		a.navigation{
 			display: inline-block;
@@ -122,6 +191,23 @@ a{
 
 			&:hover{
 				text-decoration: none;
+			}
+		}
+		a.count-selected{
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: -14px;
+			border-radius: 100%;
+			width: 50px;
+			height: 50px;
+			color: $color-white;
+			background-color: $color-green;
+
+			span{
+				display: inline-block;
+				margin-top: 14px;
+				font: 700 18px/22px 'Open Sans';
 			}
 		}
 	}

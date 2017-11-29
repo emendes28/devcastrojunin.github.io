@@ -4,6 +4,8 @@ body {
 
 a:hover, a:visited, a:focus {
   text-decoration: none;
+  outline: none;
+  outline: 0;
 }
 
 .img-shadow {
@@ -61,6 +63,65 @@ a:hover, a:visited, a:focus {
   text-align: right;
 }
 
+.animated-modal {
+  border-radius: 8px;
+}
+
+#selectedItemList {
+  width: 600px;
+  max-width: 600px;
+  margin: 0;
+}
+
+#selectedItemList h2 {
+  font: 400 24px/33px 'Open Sans';
+  color: #4B4B4B;
+  margin: 0 0 35px;
+  text-align: center;
+}
+
+#selectedItemList ul#itemsSelected {
+  margin: 0;
+  padding: 0;
+}
+
+#selectedItemList ul#itemsSelected li {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font: 400 16px/22px 'Open Sans';
+  position: relative;
+  margin-top: 10px;
+}
+
+#selectedItemList ul#itemsSelected li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  width: 40px;
+  height: 42px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+#selectedItemList ul#itemsSelected li i:hover {
+  background-color: #ED5B1D;
+  color: #fff;
+  border-color: #ED5B1D;
+}
+
+#selectedItemList div.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .menu {
   width: 100%;
   position: fixed;
@@ -68,6 +129,11 @@ a:hover, a:visited, a:focus {
   bottom: 0;
   z-index: 600;
   background-color: #fff;
+  transition: 0.25s ease-in-out 0s;
+}
+
+.menu.menu-hidden {
+  transform: translateY(71px);
 }
 
 .menu div.title {
@@ -96,16 +162,21 @@ a:hover, a:visited, a:focus {
 .menu div.list-navigation ul li a {
   text-align: center;
   border: 1px solid #d5e0eb;
+  border-radius: 4px;
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
   padding: 25px;
   font: 400 16px/22px 'Open Sans';
   color: #4B4B4B;
+  transition: 0.25s ease-in-out 0s;
 }
 
 .menu div.list-navigation ul li a:hover {
   text-decoration: none;
+  background-color: #ED5B1D;
+  border-color: #ED5B1D;
+  color: #fff;
 }
 
 .menu div.actions {
@@ -113,6 +184,7 @@ a:hover, a:visited, a:focus {
   padding: 25px 0;
   text-align: center;
   border-top: 1px solid #d5e0eb;
+  position: relative;
 }
 
 .menu div.actions a.navigation {
@@ -123,6 +195,24 @@ a:hover, a:visited, a:focus {
 
 .menu div.actions a.navigation:hover {
   text-decoration: none;
+}
+
+.menu div.actions a.count-selected {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -14px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #6FBD05;
+}
+
+.menu div.actions a.count-selected span {
+  display: inline-block;
+  margin-top: 14px;
+  font: 700 18px/22px 'Open Sans';
 }
 
 div#layer {
