@@ -2,6 +2,11 @@ body {
   font-family: 'Open Sans';
 }
 
+#wrap {
+  float: left;
+  width: 100%;
+}
+
 a:hover, a:visited, a:focus {
   text-decoration: none;
   outline: none;
@@ -654,17 +659,36 @@ section.slides div#nav span.cycle-pager-active {
   color: #0D4491;
 }
 
-@media (max-width: 1440px) {
-  section.slides .control-arrows a.prev {
-    left: -20px;
+@media (max-width: 1024px) {
+  section.slides .slider-content h4.medium {
+    font-size: 34px;
   }
-  section.slides .control-arrows a.prev:hover {
-    left: -30px;
+  section.slides section#busca .slider-content .box-img-floating img {
+    max-width: 300px;
   }
-  section.slides .control-arrows a.next {
-    right: -20px;
+  section.slides section#busca .slider-content .box-img-floating img.img3 {
+    left: 310px;
   }
-  section.slides .control-arrows a.next:hover {
-    right: -30px;
+  section.slides section#busca .slider-content .box-img-floating img.img4 {
+    left: 510px;
+  }
+  section.slides section#emailMkt .slider-content img {
+    max-width: 550px;
+  }
+  section.slides section#produtosPatrocinados .slider-content h4.medium br, section.slides section#produtosPatrocinados .slider-content h5 br {
+    display: none;
+  }
+  section.slides section#redesSociais .slider-content h5 br {
+    display: none;
+  }
+  section.slides section#mobile .slider-content img {
+    width: 190px;
+  }
+  section.slides section#mobile .slider-content p br {
+    display: none;
+  }
+  section.slides section#mobile .slider-content .last p i {
+    display: inline-block;
+    width: 100%;
   }
 }

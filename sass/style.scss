@@ -9,6 +9,10 @@ $color-green: #6FBD05;
 body{
 	font-family: 'Open Sans';
 }
+#wrap{
+	float: left;
+	width: 100%;
+}
 a{
 	&:hover, &:visited, &:focus{
 		text-decoration: none;
@@ -652,23 +656,72 @@ section.slides{
 }
 
 // Responsivo
-@media (max-width: 1440px){
+
+// Para 1440px
+@media (max-width: 1024px){
 	section.slides{
-		.control-arrows{
+		.slider-content{
+			h4.medium{
+				font-size: 34px;
+			}
+		}
+		section#busca{
+			.slider-content{
+				.box-img-floating{
+					img{
+						max-width: 300px;
 
-			a{
-				&.prev{
-					left: -20px;
-
-					&:hover{
-						left: -30px;
+						&.img3{
+							left: 310px;
+						}
+						&.img4{
+							left: 510px;
+						}
 					}
 				}
-				&.next{
-					right: -20px;
-
-					&:hover{
-						right: -30px;
+			}
+		}
+		section#emailMkt{
+			.slider-content{
+				img{
+					max-width: 550px;
+				}
+			}
+		}
+		section#produtosPatrocinados{
+			.slider-content{
+				h4.medium, h5{
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+		section#redesSociais{
+			.slider-content{
+				h5{
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+		section#mobile{
+			.slider-content{
+				img{
+					width: 190px;
+				}
+				p{
+					br{
+						display: none;
+					}
+				}
+				.last{
+					p{
+						i{
+							display: inline-block;
+							width: 100%;
+						}
 					}
 				}
 			}

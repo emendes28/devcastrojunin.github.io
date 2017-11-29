@@ -44,15 +44,35 @@ jQuery(document).ready(function($) {
 	// Button select item
 	$('.select-item').on('click', function(event) {
 		event.preventDefault();
-		$(this).toggleClass('active');
+		var prod_name = $(this).closest('section').data('prod-name'),
+			prod_id = $(this).closest('section').data('prod-id'),
+			_html = '<li id="'+ prod_id +'">'+ prod_name +'<i class="fa fa-trash-o delete-item" aria-hidden="true"></i></li>';
+
+		if (!$(this).hasClass('active')) {
+			$(this).addClass('active');
+			$('#itemsSelected').append(_html);
+			count_items();
+		}else{
+			$(this).removeClass('active');
+
+			$('#itemsSelected li').each(function(index, el) {
+				var prod_modal_id = $(el).attr('id');
+
+				if (prod_modal_id == prod_id) {
+					$('#itemsSelected li#'+ prod_id).remove();
+					count_items();
+				}
+			});
+		}
 	});
 
 	// Delete item select - Modal
-	$('i.delete-item').on('click',function (e) {
-        e.preventDefault ();        
+	$(document).on('click', 'i.delete-item', function () {      
         var res = confirm('Deseja realmente excluir esse item?');
 
         if (res == true) {
+			var prod_id = $(this).closest('li').attr('id');
+			$("section.slides").find("[data-prod-id='"+ prod_id +"']").find('.select-item').removeClass('active');
         	$(this).closest('li').remove();
 			count_items();
         }
@@ -64,6 +84,5 @@ jQuery(document).ready(function($) {
 		$('.count-selected span').text(items);
 	}
 	count_items();
-
 
 });
