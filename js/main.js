@@ -49,9 +49,9 @@ jQuery(document).ready(function($) {
 			_html = '<li id="'+ prod_id +'">'+ prod_name +'<i class="fa fa-trash-o delete-item" aria-hidden="true"></i></li>';
 
 		if (!$(this).hasClass('active')) {
-			$(this).addClass('active');
 			$('#itemsSelected').append(_html);
 			count_items();
+			$(this).addClass('active');
 		}else{
 			$(this).removeClass('active');
 
@@ -81,8 +81,20 @@ jQuery(document).ready(function($) {
 	// Count items in list modal
 	function count_items(){
 		var items = $('#itemsSelected li').length;
-		$('.count-selected span').text(items);
+
+		if (items > 0) {
+			$('.count-selected span').text(items);
+			$('.count-selected').css('transform', 'translateY(0)');	
+		}else{
+			$('.count-selected').css('transform', 'translateY(100px)');
+			$('.fancybox-close-small').trigger('click');				
+		}
+
+		if(items == 1 && $('.select-item').hasClass('active') == false){
+			alert("Tooltip devera ser criado para substituir esse alert.");
+		}
 	}
 	count_items();
 
+	AOS.init();
 });

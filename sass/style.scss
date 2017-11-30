@@ -183,15 +183,18 @@ a{
 	}
 	div.actions{
 		width: 100%;
-		padding: 25px 0;
 		text-align: center;
 		border-top: 1px solid #d5e0eb;	
 		position: relative;	
 		
 		a.navigation{
+			padding: 25px 0;
+			width: 100%;
 			display: inline-block;
 			font: 400 14px/17px 'Open Sans';
 			color: $color-gray;
+			position: relative;
+			z-index: 5;
 
 			&:hover{
 				text-decoration: none;
@@ -201,12 +204,15 @@ a{
 			display: inline-block;
 			position: absolute;
 			right: 0;
-			top: -14px;
+			top: 9px;
 			border-radius: 100%;
 			width: 50px;
 			height: 50px;
 			color: $color-white;
 			background-color: $color-green;
+			transition: 0.25s ease-in-out 0s;
+			transform: translateY(100px);
+			z-index: 10;
 
 			span{
 				display: inline-block;
