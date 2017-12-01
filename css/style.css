@@ -72,6 +72,20 @@ a:hover, a:visited, a:focus {
   border-radius: 8px;
 }
 
+.bt-mobile {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
+
 #selectedItemList {
   width: 600px;
   max-width: 600px;
@@ -128,6 +142,7 @@ a:hover, a:visited, a:focus {
 }
 
 .menu {
+  display: none;
   width: 100%;
   position: fixed;
   left: 0;
@@ -552,6 +567,10 @@ section.slides section#redesSociais .slider-content .box-content div.desc-text s
   color: #0D4491;
 }
 
+section.slides section#mobile .img-mobile {
+  display: none;
+}
+
 section.slides section#mobile .slider-content {
   padding: 0 30px;
 }
@@ -696,5 +715,323 @@ section.slides div#nav span.cycle-pager-active {
   section.slides section#mobile .slider-content .last p i {
     display: inline-block;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  section#topo .anuncie {
+    padding: 0 0 40px;
+    margin-top: 15px;
+  }
+  section#topo .anuncie .anun-title {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    background-size: 80%;
+  }
+  section#topo .anuncie .anun-title p {
+    margin-top: 0;
+  }
+  section#topo .anuncie .anun-content p br {
+    display: none;
+  }
+  section#sites .logo-list a {
+    max-width: 150px;
+  }
+  section#sites .logo-list a img {
+    width: 100%;
+  }
+  section.slides section {
+    padding: 35px 0;
+  }
+  section.slides section .slider-content {
+    padding: 0;
+  }
+  section.slides section .slider-content h4.medium {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  section.slides section .slider-content div.item {
+    padding: 0 15px;
+    max-width: 300px;
+    margin: 0 35px;
+  }
+  section.slides section .slider-content div.item img {
+    width: 100%;
+  }
+  section.slides .slider-header h3 {
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 448px;
+  }
+  section.slides .slider-header h3 span {
+    width: 100%;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  section.slides .slider-content h4 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  section.slides section#busca .slider-content .box-img-floating img.img1 {
+    display: none;
+  }
+  section.slides section#busca .slider-content .box-img-floating img.img2 {
+    left: 15px;
+  }
+  section.slides section#busca .slider-content .box-img-floating img.img3 {
+    left: 230px;
+    top: 50px;
+  }
+  section.slides section#busca .slider-content .box-img-floating img.img4 {
+    left: 435px;
+    top: 85px;
+  }
+  section.slides section#emailMkt .slider-content img {
+    max-width: 455px;
+    margin-top: 20px;
+  }
+  section.slides section#produtosPatrocinados .slider-content h4 br, section.slides section#produtosPatrocinados .slider-content h5 br {
+    display: none;
+  }
+  section.slides section#midiaExterna .slider-content h4 {
+    margin-bottom: 40px;
+  }
+  section.slides section#midiaExterna .slider-content h5 {
+    font-size: 20px;
+  }
+  section.slides section#midiaExterna .slider-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  section.slides section#midiaExterna .slider-content .texts.last {
+    margin-top: -110px;
+  }
+  section.slides section#mobile .slider-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  section.slides section#mobile .slider-content p br {
+    display: none;
+  }
+  section.slides section#mobile .slider-content h5 {
+    margin-top: 15px;
+  }
+  section.slides section#mobile .slider-content .last p {
+    max-width: 33%;
+    float: left;
+    padding: 0 10px;
+  }
+  section.slides section#mobile .img-desk {
+    display: none;
+  }
+  section.slides section#mobile .img-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-responsive {
+    width: 100%;
+    max-width: 100%;
+  }
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .bt-mobile {
+    display: block;
+  }
+  section#topo div.title {
+    padding-top: 75px;
+  }
+  section#topo div.title .title-box img {
+    width: 77%;
+  }
+  section#topo div.title .title-box span {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  section#topo div.buttons .btn-default {
+    padding: 15px 60px;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  section#topo .anuncie {
+    background: url(../images/img-quadrados.svg) no-repeat center 0;
+    background-size: 100%;
+    min-height: 240px;
+  }
+  section#topo .anuncie .anun-title {
+    background-image: none;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+  section#topo .anuncie .anun-title p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  section#topo .anuncie .anun-content p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  section#sites .logo-list {
+    padding-bottom: 0;
+  }
+  section#sites .logo-list a {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  section#sites .logo-list a:nth-child(3) img {
+    max-width: 40px;
+  }
+  section.slides section {
+    padding-top: 10px;
+  }
+  section.slides section .slider-header h3 {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 100%;
+  }
+  section.slides section .slider-header h3 span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  section.slides section .slider-header .btn-default {
+    display: none;
+  }
+  section.slides section .slider-content h4 {
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 0;
+  }
+  section.slides section .slider-content h4.medium {
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+  }
+  section.slides section .slider-content h4 br {
+    display: none;
+  }
+  section.slides section .slider-content .item + .item {
+    margin-top: 30px;
+  }
+  section.slides section#paginaDeProduto .slider-content {
+    margin-top: 0;
+  }
+  section.slides section#paginaDeProduto .slider-content h4 {
+    margin: 0 0 25px;
+  }
+  section.slides section#paginaDeProduto .slider-content h4 br {
+    display: none;
+  }
+  section.slides section#paginaDeProduto .slider-content .img-desc {
+    float: none;
+    text-align: left;
+  }
+  section.slides section#paginaDeProduto .slider-content img {
+    margin-bottom: 25px;
+  }
+  section.slides section#busca .slider-content .box-img-floating {
+    min-height: 100%;
+  }
+  section.slides section#busca .slider-content .box-img-floating img {
+    position: static;
+    display: none;
+    max-width: 100%;
+  }
+  section.slides section#busca .slider-content .box-img-floating img.img2 {
+    display: block;
+  }
+  section.slides section#emailMkt .slider-content .texts {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  section.slides section#emailMkt .slider-content .texts p {
+    font-size: 16px;
+    line-height: 16px;
+    width: 220px;
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dedddd;
+    margin: 0 auto 20px;
+  }
+  section.slides section#emailMkt .slider-content .texts p strong {
+    font-size: 24px;
+    line-height: 30px;
+    display: inline-block;
+    width: 100%;
+  }
+  section.slides section#emailMkt .slider-content .texts p br {
+    display: none;
+  }
+  section.slides section#produtosPatrocinados .slider-content h4 {
+    margin: 0 0 25px;
+  }
+  section.slides section#produtosPatrocinados .slider-content h5 {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  section.slides section#midiaExterna .slider-content .texts.last {
+    margin-top: 45px;
+  }
+  section.slides section#midiaExterna .slider-content .image {
+    margin: 25px 0;
+  }
+  section.slides section#redesSociais .slider-content h4 {
+    margin: 0 0 25px;
+  }
+  section.slides section#redesSociais .slider-content h5 {
+    font-size: 13px;
+    line-height: 26px;
+    text-align: left;
+  }
+  section.slides section#redesSociais .slider-content .box-content h6 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  section.slides section#redesSociais .slider-content .box-content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  section.slides section#redesSociais .slider-content .box-content div.desc-text {
+    width: 33.333%;
+    float: left;
+    margin-top: 10px;
+  }
+  section.slides section#redesSociais .slider-content .box-content div.desc-text strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  section.slides section#redesSociais .slider-content .box-content div.desc-text strong span {
+    font-size: 10px;
+    line-height: 8px;
+    display: inline-block;
+    width: 100%;
+  }
+  section.slides section#redesSociais .slider-content .box-content div.desc-text strong br {
+    display: none;
+  }
+  section.slides section#redesSociais .slider-content .box-content .numbers {
+    margin-bottom: 25px;
+  }
+  section.slides section#redesSociais .slider-content .img {
+    text-align: center;
+  }
+  section.slides section#redesSociais .slider-content .img img {
+    max-width: 60px;
+  }
+  section.slides section#mobile .slider-content {
+    padding: 0;
+  }
+  section.slides section#mobile .slider-content .img {
+    text-align: center;
+    margin-top: 25px;
   }
 }

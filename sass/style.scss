@@ -72,6 +72,17 @@ a{
 .animated-modal{
 	border-radius: 8px;	
 }
+.bt-mobile{
+	display: none;
+	margin-top: 30px;
+	text-align: center;
+}
+.show-mobile{
+	display: none;
+}
+.hide-mobile{
+	display: block;
+}
 #selectedItemList{
 	width  : 600px;
 	max-width  : 600px;
@@ -128,6 +139,7 @@ a{
 
 // Menu
 .menu{
+	display: none;
 	width: 100%;
 	position: fixed;
 	left: 0;
@@ -550,6 +562,9 @@ section.slides{
 	}
 
 	section#mobile{
+		.img-mobile{
+			display: none;
+		}
 		.slider-content{
 			padding: 0 30px;
 			
@@ -733,4 +748,441 @@ section.slides{
 			}
 		}
 	}
+}
+@media (max-width: 768px){
+	section#topo{
+		.anuncie{
+			padding: 0 0 40px;
+			margin-top: 15px;
+
+			.anun-title{
+				padding-top: 80px;
+				padding-bottom: 10px;
+				background-size: 80%;
+
+				p{
+					margin-top: 0;
+				}
+			}
+			.anun-content{
+				p{
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	section#sites{
+		.logo-list{
+			a{
+				max-width: 150px;
+
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	section.slides{
+		section{
+			padding: 35px 0;
+
+			.slider-content{
+				padding: 0;
+
+				h4.medium{
+					font-size: 26px;
+					line-height: 40px;
+				}
+
+				div.item{
+					padding: 0 15px;
+					max-width: 300px;
+					margin: 0 35px;
+
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.slider-header{
+			h3{
+				font-size: 22px;
+				line-height: 30px;
+				max-width: 448px;
+
+				span{
+					width: 100%;
+					margin-left: 0;
+					font-size: 20px;
+					line-height: 27px;
+				}
+			}
+		}
+		.slider-content{
+			h4{
+				font-size: 36px;
+				line-height: 46px;
+			}
+		}
+
+		section#busca{
+			.slider-content{
+				.box-img-floating{
+					img{
+						&.img1{
+							display: none;
+						}
+						&.img2{
+							left: 15px;
+						}
+						&.img3{
+							left: 230px;
+							top: 50px;
+						}
+						&.img4{
+							left: 435px;
+							top: 85px;
+						}						
+					}
+				}
+			}
+		}
+		section#emailMkt{
+			.slider-content{
+				img{
+					max-width: 455px;
+    				margin-top: 20px;
+				}
+			}
+		}
+		section#produtosPatrocinados{
+			.slider-content{
+				h4, h5{
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+		section#midiaExterna{
+			.slider-content{
+				h4{
+					margin-bottom: 40px;
+				}
+				h5{
+					font-size: 20px;
+				}
+				p{
+					font-size: 16px;
+					line-height: 28px;
+				}
+				.texts{
+					&.last{
+						margin-top: -110px;
+					}
+				}
+			}
+		}
+		section#mobile{
+			.slider-content{
+				p{
+					font-size: 16px;
+					line-height: 28px;
+
+					br{
+						display: none;
+					}
+				}
+				h5{
+					margin-top: 15px;
+				}
+				.last{
+					p{
+						max-width: 33%;
+						float: left;
+						padding: 0 10px;
+					}
+				}
+			}
+			.img-desk{
+				display: none;
+			}
+			.img-mobile{
+				display: block;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.img-responsive{
+		width: 100%;
+		max-width: 100%;
+	}
+	.show-mobile{
+		display: block;
+	}
+	.hide-mobile{
+		display: none;
+	}
+	.bt-mobile{
+		display: block;
+	}
+	section#topo{
+		div.title{
+			padding-top: 75px;
+
+			.title-box{
+				img{
+					width: 77%;
+				}
+				span{
+					font-size: 13px;
+					line-height: 18px;
+				}
+			}
+		}
+		div.buttons{
+			.btn-default{
+				padding: 15px 60px;
+			    width: 80%;
+			    box-sizing: border-box;
+			    margin: 10px 0;
+			}
+		}
+		.anuncie{
+			background: url(../images/img-quadrados.svg) no-repeat center 0;
+			background-size: 100%;
+			min-height: 240px;
+
+			.anun-title{
+				background-image: none;
+				padding-top: 15px;
+				padding-bottom: 0;
+
+				p{
+					font-size: 14px;
+					line-height: 19px;
+				}
+			}
+			.anun-content{
+				p{
+					font-size: 12px;
+					line-height: 22px;
+				}
+			}
+		} 
+	}
+	section#sites{
+		.logo-list{
+			padding-bottom: 0;
+
+			a{
+				width: 30%;
+				margin-bottom: 20px;
+
+				&:nth-child(3){
+					img{
+						max-width: 40px;
+					}
+				}
+			}
+		}
+	}
+	section.slides{
+		section{
+			padding-top: 10px;
+		
+			.slider-header{
+				h3{
+					font-size: 16px;
+				    line-height: 22px;
+				    max-width: 100%;
+
+				    span{
+				    	font-size: 16px;
+				    	line-height: 22px;
+				    }
+				}
+				.btn-default{
+					display: none;
+				}
+			}
+			.slider-content{
+				h4{
+					font-size: 26px;
+				    line-height: 36px;
+				    margin-top: 0;
+
+				    &.medium{
+				    	font-size: 22px;
+				    	line-height: 31px;
+				    	text-align: center;
+				    }
+
+				    br{
+				    	display: none;
+				    }
+				}
+				.item + .item{
+					margin-top: 30px;
+				}
+			}
+		}
+		section#paginaDeProduto{
+			.slider-content{
+				margin-top: 0;
+
+				h4{
+					margin: 0 0 25px;
+					br{
+						display: none;
+					}
+				}
+				.img-desc{
+					float: none;
+					text-align: left; 
+				}
+
+				img{
+					margin-bottom: 25px;
+				}
+			}
+		}
+		section#busca{
+			.slider-content{
+				.box-img-floating{
+					min-height: 100%;
+
+					img{
+						position: static;
+						display: none;
+						max-width: 100%;
+
+						&.img2{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		section#emailMkt{ 
+			.slider-content{
+				.texts{
+					text-align: center;
+					width: 100%;
+					max-width: 100%; 
+
+					p{
+						font-size: 16px;
+						line-height: 16px;
+						width: 220px;
+						padding: 30px 40px;
+						background-color: $color-white;
+						border-radius: 4px;
+						border: 1px solid #dedddd;
+						margin: 0 auto 20px;
+
+						strong{
+							font-size: 24px;
+							line-height: 30px;
+							display: inline-block;
+							width: 100%;
+						}
+						br{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		section#produtosPatrocinados{
+			.slider-content{
+				h4{
+					margin: 0 0 25px;
+				}
+				h5{
+					font-size: 12px;
+					line-height: 24px;
+				}
+			}
+		}
+		section#midiaExterna{
+			.slider-content{
+				.texts.last{
+					margin-top: 45px;
+				}
+				.image{
+					margin: 25px 0;
+				}
+			}
+		}
+		section#redesSociais{
+			.slider-content{
+				h4{
+					margin: 0 0 25px;
+				}
+				h5{
+					font-size: 13px;
+					line-height: 26px;
+					text-align: left;
+				}
+				.box-content{
+					h6{
+						margin: 0;
+						font-size: 20px;
+						line-height: 32px;
+					}
+					p{
+						font-size: 12px;
+						line-height: 20px;
+					}	
+					div.desc-text{
+						width: 33.333%;
+						float: left;
+						margin-top: 10px;
+
+						strong{
+							font-size: 16px;
+							line-height: 20px;
+
+							span{
+								font-size: 10px;
+								line-height: 8px;
+								display: inline-block;
+								width: 100%;
+							}
+							br{
+								display: none;
+							}
+						}
+					}
+					.numbers{
+						margin-bottom: 25px;
+					}				
+				}
+
+				.img{
+					text-align: center;
+					img{
+						max-width: 60px;
+					}
+				}
+			}
+		}
+		section#mobile{
+			.slider-content{
+				padding: 0;
+
+				.img{
+					text-align: center;
+					margin-top: 25px;
+				}
+			}
+		}
+	}
+	
 }
