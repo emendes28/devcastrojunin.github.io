@@ -142,7 +142,6 @@ a:hover, a:visited, a:focus {
 }
 
 .menu {
-  display: none;
   width: 100%;
   position: fixed;
   left: 0;
