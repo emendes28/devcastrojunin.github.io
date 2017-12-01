@@ -60,6 +60,16 @@ a:hover, a:visited, a:focus {
   color: #fff;
 }
 
+.btn-default.active {
+  background-color: #6FBD05;
+  border-color: #6FBD05;
+  text-decoration: none;
+}
+
+.btn-default.active i {
+  color: #fff;
+}
+
 .text-center {
   text-align: center;
 }

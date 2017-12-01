@@ -62,6 +62,15 @@ a{
 		background-color: $color-green;
 		color: $color-white;
 	}
+	&.active{
+		background-color: #6FBD05;
+		border-color: #6FBD05;
+		text-decoration: none;
+
+		i{
+			color: $color-white;
+		}
+	}
 }
 .text-center{
 	text-align: center;
