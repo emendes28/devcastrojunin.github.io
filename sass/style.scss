@@ -179,12 +179,10 @@ a{
 
 	div.list-navigation{
 		display: none;
-		overflow: scroll;
 
 		ul{
 			margin: 0;
 			padding: 0;
-			overflow: scroll;
 
 			li{
 				list-style: none;
@@ -245,7 +243,7 @@ a{
 			color: $color-white;
 			background-color: $color-green;
 			transition: 0.25s ease-in-out 0s;
-			transform: translateY(100px);
+			opacity: 0;
 			z-index: 10;
 
 			span{
@@ -964,13 +962,6 @@ section.slides{
 	.bt-mobile{
 		display: block;
 	}
-	// .menu{
-	// 	div.actions{
-	// 		a.navigation{
-	// 			text-align: left; 
-	// 		}
-	// 	}
-	// }
 	section#topo{
 		div.title{
 			padding-top: 75px;

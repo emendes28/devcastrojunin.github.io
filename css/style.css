@@ -187,13 +187,11 @@ a:hover, a:visited, a:focus {
 
 .menu div.list-navigation {
   display: none;
-  overflow: scroll;
 }
 
 .menu div.list-navigation ul {
   margin: 0;
   padding: 0;
-  overflow: scroll;
 }
 
 .menu div.list-navigation ul li {
@@ -256,7 +254,7 @@ a:hover, a:visited, a:focus {
   color: #fff;
   background-color: #6FBD05;
   transition: 0.25s ease-in-out 0s;
-  transform: translateY(100px);
+  opacity: 0;
   z-index: 10;
 }
 

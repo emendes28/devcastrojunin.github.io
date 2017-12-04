@@ -17,20 +17,26 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		if ($('.list-navigation').is(':hidden')) {
 			$('#layer').fadeIn('slow');
-			$('.menu').css({
-				'height' : '100%',
-				'overflow' : 'scroll'
-			});
+			
+			if ($(window).width() < 768) {
+				$('.menu').css({
+					'height' : '100%',
+					'overflow' : 'scroll'
+				});
+				$('.list-navigation').closest('html').css('overflow', 'hidden');				
+			}
 			$('.list-navigation').fadeIn('slow');
-			$('.list-navigation').closest('html').css('overflow', 'hidden');
 		}else{
 			$('#layer').fadeOut('slow');
 			$('.list-navigation').fadeOut('slow');
-			$('.menu').css({
-				'height' : 'auto',
-				'overflow' : 'visible'
-			});
-			$('.list-navigation').closest('html').css('overflow', 'visible');
+			
+			if ($(window).width() < 768) {
+				$('.menu').css({
+					'height' : 'auto',
+					'overflow' : 'visible'
+				});
+				$('.list-navigation').closest('html').css('overflow', 'visible');
+			}
 		}
 	});
 	$('.list-navigation li a').on('click', function() {
@@ -67,6 +73,7 @@ jQuery(document).ready(function($) {
 			$('#itemsSelected').append(_html);
 			count_items();
 			$(this).addClass('active');
+
 		}else{
 			$(this).removeClass('active');
 
@@ -93,18 +100,35 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $(document).on('click', '#openModal', function(event) {
+    	event.preventDefault();
+    	$.fancybox.open({
+			src  : '#modalItems',
+			touch: false
+		});
+    });
+
 	// Count items in list modal
 	function count_items(){
 		var items = $('#itemsSelected li').length;
 
 		if (items > 0) {
 			$('.count-selected span').text(items);
-			$('a.navigation').css('text-align', 'left');
-			$('.count-selected').css('transform', 'translateY(0)');	
+						
+			$('.count-selected').css('opacity', '1');	
+			
+			if ($(window).width() < 768)
+				$('a.navigation').css('text-align', 'left');
 		}else{
-			$('.count-selected').css('transform', 'translateY(100px)');
-			$('a.navigation').css('text-align', 'center');
+			$('.count-selected span').text(items);
+			$('.count-selected').css('opacity', '0');
+						
 			$('.fancybox-close-small').trigger('click');				
+			
+			console.log(items);
+
+			if ($(window).width() < 768)
+				$('a.navigation').css('text-align', 'center');
 		}
 
 		if(items == 1 && $('.select-item').hasClass('active') == false){
