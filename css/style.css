@@ -871,6 +871,9 @@ section.slides div#nav span.cycle-pager-active {
   .bt-mobile {
     display: block;
   }
+  .menu {
+    overflow: scroll;
+  }
   section#topo div.title {
     padding-top: 75px;
   }

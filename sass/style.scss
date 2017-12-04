@@ -953,6 +953,9 @@ section.slides{
 	.bt-mobile{
 		display: block;
 	}
+	.menu{
+		overflow: scroll;
+	}
 	section#topo{
 		div.title{
 			padding-top: 75px;
