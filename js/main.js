@@ -36,6 +36,11 @@ jQuery(document).ready(function($) {
 	$('.list-navigation li a').on('click', function() {
 		$('#layer').fadeOut('slow');
 		$('.list-navigation').fadeOut('slow');
+		$('.menu').css({
+			'height' : 'auto',
+			'overflow' : 'visible'
+		});
+		$('.list-navigation').closest('html').css('overflow', 'visible');
 	});
 
 	// Scroll navigation click menu
