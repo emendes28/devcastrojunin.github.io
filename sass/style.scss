@@ -283,7 +283,7 @@ a{
 				top: -157px;
 				background-color: $color-white;
 				border: 1px solid #979797;
-				border-radius: 4px;
+				border-radius: 4px 4px 0px 4px;
 				padding: 25px;
 				font: 400 14px/19px 'Open Sans';
 				color: $color-gray;
@@ -293,19 +293,34 @@ a{
 				visibility: hidden;
 
 				&:before {
+				    content: "";
+				    display: inline-block;
+				    vertical-align: middle;
+				    margin-right: 10px;
+				    width: 0;
+				    height: 0;
+				    border-left: 16px solid transparent;
+				    border-right: 0px solid transparent;
+				    border-top: 16px solid #979797;
+				    position: absolute;
+				    right: -11px;
+				    bottom: -16px;
+				    z-index: 10;
+				}
+				&:after {
 					content: "";
 				    display: inline-block;
 				    vertical-align: middle;
 				    margin-right: 10px;
 				    width: 0;
 				    height: 0;
-				    border-left: 15px solid transparent;
+				    border-left: 14px solid transparent;
 				    border-right: 0px solid transparent;
-				    border-top: 15px solid #979797;
+				    border-top: 14px solid #fff;
 				    position: absolute;
-				    right: -11px;
-				    bottom: -15px;
-					z-index: 10;
+				    right: -10px;
+				    bottom: -13px;
+				    z-index: 10;
 				}
 			}
 		}
@@ -911,8 +926,12 @@ section.slides{
 				font-size: 36px;
 				line-height: 46px;
 			}
+			div.item{
+				max-width: 100%;
+				margin-left: 0;
+				margin-right: 0;
+			}
 		}
-
 		section#busca{
 			.slider-content{
 				.box-img-floating{

@@ -296,7 +296,7 @@ a:hover, a:visited, a:focus {
   top: -157px;
   background-color: #fff;
   border: 1px solid #979797;
-  border-radius: 4px;
+  border-radius: 4px 4px 0px 4px;
   padding: 25px;
   font: 400 14px/19px 'Open Sans';
   color: #4B4B4B;
@@ -313,12 +313,28 @@ a:hover, a:visited, a:focus {
   margin-right: 10px;
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
+  border-left: 16px solid transparent;
   border-right: 0px solid transparent;
-  border-top: 15px solid #979797;
+  border-top: 16px solid #979797;
   position: absolute;
   right: -11px;
-  bottom: -15px;
+  bottom: -16px;
+  z-index: 10;
+}
+
+.menu div.actions a.count-selected span.tooltip:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 14px solid #fff;
+  position: absolute;
+  right: -10px;
+  bottom: -13px;
   z-index: 10;
 }
 
@@ -863,6 +879,11 @@ section.slides div#nav span.cycle-pager-active {
   section.slides .slider-content h4 {
     font-size: 36px;
     line-height: 46px;
+  }
+  section.slides .slider-content div.item {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   section.slides section#busca .slider-content .box-img-floating img.img1 {
     display: none;
