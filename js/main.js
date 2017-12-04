@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 				'overflow' : 'scroll'
 			});
 			$('.list-navigation').fadeIn('slow');
-			$('.list-navigation').closest('body').css('overflow', 'hidden');
+			$('.list-navigation').closest('html').css('overflow', 'hidden');
 		}else{
 			$('#layer').fadeOut('slow');
 			$('.list-navigation').fadeOut('slow');
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 				'height' : 'auto',
 				'overflow' : 'visible'
 			});
-			$('.list-navigation').closest('body').css('overflow', 'visible');
+			$('.list-navigation').closest('html').css('overflow', 'visible');
 		}
 	});
 	$('.list-navigation li a').on('click', function() {
