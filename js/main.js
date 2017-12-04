@@ -99,9 +99,11 @@ jQuery(document).ready(function($) {
 
 		if (items > 0) {
 			$('.count-selected span').text(items);
+			$('a.navigation').css('text-align', 'left');
 			$('.count-selected').css('transform', 'translateY(0)');	
 		}else{
 			$('.count-selected').css('transform', 'translateY(100px)');
+			$('a.navigation').css('text-align', 'center');
 			$('.fancybox-close-small').trigger('click');				
 		}
 
