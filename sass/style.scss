@@ -773,6 +773,13 @@ section.slides{
 	}
 }
 @media (max-width: 768px){
+	#selectedItemList{
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.animated-modal{
+		max-width: 90%;
+	}
 	section#topo{
 		.anuncie{
 			padding: 0 0 40px;
