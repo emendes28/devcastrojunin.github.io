@@ -48,9 +48,21 @@ a:hover, a:visited, a:focus {
   color: inherit;
 }
 
+.btn-default:hover {
+  color: #fff;
+  background-color: #ED5B1D;
+  border-color: #ED5B1D;
+}
+
 .btn-default.white {
   background-color: #fff;
   color: #ED5B1D;
+}
+
+.btn-default.white:hover {
+  color: #fff;
+  background-color: #ED5B1D;
+  border-color: #ED5B1D;
 }
 
 .btn-default.orange {
@@ -62,6 +74,12 @@ a:hover, a:visited, a:focus {
 .btn-default.orange i {
   color: transparent;
   font-size: 15px;
+}
+
+.btn-default.orange:hover {
+  color: #fff;
+  background-color: #6FBD05;
+  border-color: #6FBD05;
 }
 
 .btn-default.green {
@@ -224,9 +242,8 @@ a:hover, a:visited, a:focus {
   width: 100%;
   height: 68px;
   text-align: center;
-  border-top: 1px solid #d5e0eb;
+  border-top: 1px solid #979797;
   position: relative;
-  overflow: hidden;
 }
 
 .menu div.actions a.navigation {
@@ -258,10 +275,51 @@ a:hover, a:visited, a:focus {
   z-index: 10;
 }
 
-.menu div.actions a.count-selected span {
+.menu div.actions a.count-selected span.count {
   display: inline-block;
   margin-top: 14px;
   font: 700 18px/22px 'Open Sans';
+}
+
+.menu div.actions a.count-selected span.tooltip {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  position: absolute;
+  right: 25px;
+  top: -157px;
+  background-color: #fff;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  padding: 25px;
+  font: 400 14px/19px 'Open Sans';
+  color: #4B4B4B;
+  width: 360px;
+  height: 125px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu div.actions a.count-selected span.tooltip:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 15px solid #979797;
+  position: absolute;
+  right: -11px;
+  bottom: -15px;
+  z-index: 10;
 }
 
 div#layer {
@@ -879,6 +937,9 @@ section.slides div#nav span.cycle-pager-active {
   }
   .bt-mobile {
     display: block;
+  }
+  .menu div.actions a.count-selected span.tooltip {
+    width: 200px;
   }
   section#topo div.title {
     padding-top: 75px;

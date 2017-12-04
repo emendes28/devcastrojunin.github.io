@@ -106,6 +106,10 @@ jQuery(document).ready(function($) {
 			src  : '#modalItems',
 			touch: false
 		});
+		$('span.tooltip').css({
+			'opacity': '0',
+			'visibility': 'hidden'
+		});
     });
 
 	// Count items in list modal
@@ -113,14 +117,14 @@ jQuery(document).ready(function($) {
 		var items = $('#itemsSelected li').length;
 
 		if (items > 0) {
-			$('.count-selected span').text(items);
+			$('.count-selected span.count').text(items);
 						
 			$('.count-selected').css('opacity', '1');	
 			
 			if ($(window).width() < 768)
 				$('a.navigation').css('text-align', 'left');
 		}else{
-			$('.count-selected span').text(items);
+			$('.count-selected span.count').text(items);
 			$('.count-selected').css('opacity', '0');
 						
 			$('.fancybox-close-small').trigger('click');				
@@ -132,7 +136,15 @@ jQuery(document).ready(function($) {
 		}
 
 		if(items == 1 && $('.select-item').hasClass('active') == false){
-			alert("Tooltip devera ser criado para substituir esse alert.");
+			$('span.tooltip').css({
+				'opacity': '1',
+				'visibility': 'visible'
+			});
+		}else{
+			$('span.tooltip').css({
+				'opacity': '0',
+				'visibility': 'hidden'
+			});
 		}
 	}
 	count_items();
