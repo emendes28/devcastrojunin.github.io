@@ -105,11 +105,11 @@ jQuery(document).ready(function($) {
     	$.fancybox.open({
 			src  : '#modalItems',
 			touch: false
-		});
+		}); 
 		$('span.tooltip').css({
 			'opacity': '0',
 			'visibility': 'hidden'
-		});
+		});  
     });
 
 	// Count items in list modal

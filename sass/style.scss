@@ -273,15 +273,15 @@ a{
 				display: -moz-flex;
 				display: flex;
 				-webkit-justify-content: center;
-				-moz-justify-content: center;
+				-moz-justify-content: center; 
 				justify-content: center;
 				-webkit-align-items: center;
 				-moz-align-items: center;
-				align-items: center;
-				position: absolute;
+				align-items: center; 
+				position: absolute;  
 				right: 25px;
 				top: -157px;
-				background-color: $color-white;
+				background-color: $color-white; 
 				border: 1px solid #979797;
 				border-radius: 4px 4px 0px 4px;
 				padding: 25px;
@@ -344,7 +344,7 @@ section#topo{
 	background-color: #00305D;
 	
 	div.title{
-		background: url('../images/img-header-background-1440x400.jpg') no-repeat center top; 
+		background: url('../../images/img-header-background-1440x400.jpg') no-repeat center top; 
 		background-size: cover;
 		min-height: 300px;
 		text-align: center;
@@ -375,7 +375,7 @@ section#topo{
 
 		.anun-title{
 			text-align: center;
-			background: url('../images/img-quadrados.svg') no-repeat center top; 
+			background: url('../../images/img-quadrados.svg') no-repeat center top; 
 
 			p{
 				margin: 80px 0 0;
@@ -711,7 +711,7 @@ section.slides{
 
 			&.prev{
 				float: left;
-				background: url('../images/img-nav-esq.png') no-repeat 0 0;
+				background: url('../../images/img-nav-esq.png') no-repeat 0 0;
 				left: -120px;
 
 				&:hover{
@@ -720,7 +720,7 @@ section.slides{
 			}
 			&.next{
 				float: right;
-				background: url('../images/img-nav-dir.png') no-repeat 0 0;
+				background: url('../../images/img-nav-dir.png') no-repeat 0 0;
 				right: -120px;
 
 				&:hover{
@@ -1070,7 +1070,7 @@ section.slides{
 			}
 		}
 		.anuncie{
-			background: url(../images/img-quadrados.svg) no-repeat center 0;
+			background: url(../../images/img-quadrados.svg) no-repeat center 0;
 			background-size: 100%;
 			min-height: 240px;
 
