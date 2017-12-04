@@ -7,10 +7,20 @@ body {
   width: 100%;
 }
 
+#wrap section {
+  float: left;
+  width: 100%;
+}
+
 a:hover, a:visited, a:focus {
   text-decoration: none;
   outline: none;
   outline: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .img-shadow {
@@ -86,6 +96,8 @@ a:hover, a:visited, a:focus {
   display: none;
   margin-top: 30px;
   text-align: center;
+  float: left;
+  width: 100%;
 }
 
 .show-mobile {
@@ -400,7 +412,6 @@ section.slides .slider-content div.item p {
 }
 
 section.slides section {
-  width: 100%;
   padding: 60px 0;
   background: linear-gradient(180deg, #fff 0%, #F4F4F4 100%);
 }
@@ -550,6 +561,10 @@ section.slides section#redesSociais .slider-content .box-content {
   margin-top: 25px;
   float: left;
   width: 100%;
+}
+
+section.slides section#redesSociais .slider-content .box-content img {
+  max-width: 105px;
 }
 
 section.slides section#redesSociais .slider-content .box-content h6 {
@@ -840,6 +855,9 @@ section.slides div#nav span.cycle-pager-active {
 }
 
 @media (max-width: 767px) {
+  #wrap {
+    overflow: hidden;
+  }
   .img-responsive {
     width: 100%;
     max-width: 100%;

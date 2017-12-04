@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="142" viewBox="0 0 77 142">
+  <defs>
+    <linearGradient id="ic-facebook-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F37125"/>
+      <stop offset="100%" stop-color="#0A59A2"/>
+    </linearGradient>
+  </defs>
+  <path fill="none" stroke="url(#ic-facebook-a)" stroke-linecap="round" stroke-linejoin="round" d="M74.7885913,42.4602656 L48.7698672,42.4602656 L48.7698672,30.846941 C48.7698672,25.3847159 52.3910298,24.1106031 54.9392554,24.1106031 L73.1548008,24.1106031 L73.1548008,0.0792510342 L46.7642064,0 C22.8303941,0 18.2887002,17.91683 18.2887002,29.383845 L18.2887002,42.4602656 L0,42.4602656 L0,66.8451992 L18.2887002,66.8451992 L18.2887002,140 L48.7698672,140 L48.7698672,66.8451992 L72.246462,66.8451992 L74.7885913,42.4602656 Z" transform="translate(1 1)"/>
+</svg>
