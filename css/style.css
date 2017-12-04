@@ -855,6 +855,9 @@ section.slides div#nav span.cycle-pager-active {
 }
 
 @media (max-width: 767px) {
+  #wrap {
+    overflow: hidden;
+  }
   .img-responsive {
     width: 100%;
     max-width: 100%;
