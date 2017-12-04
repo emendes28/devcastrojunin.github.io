@@ -843,6 +843,9 @@ section.slides{
 	}
 }
 @media (max-width: 768px){
+	#wrap{
+		overflow: hidden;
+	}
 	#selectedItemList{
 		width: 100%;
 		box-sizing: border-box;
@@ -898,8 +901,7 @@ section.slides{
 
 				div.item{
 					padding: 0 15px;
-					max-width: 300px;
-					margin: 0 35px;
+					max-width: 100%;
 
 					img{
 						width: 100%;
@@ -925,11 +927,6 @@ section.slides{
 			h4{
 				font-size: 36px;
 				line-height: 46px;
-			}
-			div.item{
-				max-width: 100%;
-				margin-left: 0;
-				margin-right: 0;
 			}
 		}
 		section#busca{
@@ -1021,10 +1018,7 @@ section.slides{
 	}
 }
 
-@media (max-width: 767px){
-	#wrap{
-		overflow: hidden;
-	}
+@media (max-width: 767px){	
 	.img-responsive{
 		width: 100%;
 		max-width: 100%;
