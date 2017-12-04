@@ -187,11 +187,13 @@ a:hover, a:visited, a:focus {
 
 .menu div.list-navigation {
   display: none;
+  overflow: scroll;
 }
 
 .menu div.list-navigation ul {
   margin: 0;
   padding: 0;
+  overflow: scroll;
 }
 
 .menu div.list-navigation ul li {
@@ -222,9 +224,11 @@ a:hover, a:visited, a:focus {
 
 .menu div.actions {
   width: 100%;
+  height: 68px;
   text-align: center;
   border-top: 1px solid #d5e0eb;
   position: relative;
+  overflow: hidden;
 }
 
 .menu div.actions a.navigation {
@@ -870,9 +874,6 @@ section.slides div#nav span.cycle-pager-active {
   }
   .bt-mobile {
     display: block;
-  }
-  .menu {
-    overflow: scroll;
   }
   section#topo div.title {
     padding-top: 75px;

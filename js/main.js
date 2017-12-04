@@ -17,10 +17,20 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		if ($('.list-navigation').is(':hidden')) {
 			$('#layer').fadeIn('slow');
+			$('.menu').css({
+				'height' : '100%',
+				'overflow' : 'scroll'
+			});
 			$('.list-navigation').fadeIn('slow');
+			$('.list-navigation').closest('body').css('overflow', 'hidden');
 		}else{
 			$('#layer').fadeOut('slow');
 			$('.list-navigation').fadeOut('slow');
+			$('.menu').css({
+				'height' : 'auto',
+				'overflow' : 'visible'
+			});
+			$('.list-navigation').closest('body').css('overflow', 'visible');
 		}
 	});
 	$('.list-navigation li a').on('click', function() {
