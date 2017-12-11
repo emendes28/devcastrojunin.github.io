@@ -14,8 +14,8 @@
 			<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.min.css">
-			<link rel="stylesheet" href="css/animate.css">
-			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/aos.css">
+			<link rel="stylesheet" href="dist/css/style.css">
        </head>
        <body>
            <!--[if lte IE 9]>
@@ -25,16 +25,16 @@
 			<div id="wrap">
 				<!-- Banner topo -->
 				<section id="topo">
-					<div class="title ">
+					<div class="title">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-12 text-center animated fadeInUp">
+								<div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="600">
 									<div class="title-box">
 										<img src="images/logos/logo-viavarejoads.svg" alt="Via Varejo ADS"><br/>
 										<span>Maximize sua exposição e impulsione suas vendas!</span>
 									</div>
 									<div class="buttons">
-										<a href="#" class="btn-default white">Quero Saber mais</a>
+										<a href="#home" class="btn-default white">Quero Saber mais</a>
 										<a href="#" class="btn-default">Acessar plataforma</a>
 									</div>
 								</div>
@@ -44,10 +44,10 @@
 					<div class="anuncie">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-6 anun-title animated fadeInLeft">
+								<div class="col-md-6 anun-title" data-aos="fade-right" data-aos-duration="600">
 									<p>Anuncie em nossos sites</p>
 								</div>
-								<div class="col-md-6 anun-content animated fadeInRight">
+								<div class="col-md-6 anun-content" data-aos="fade-left" data-aos-duration="600">
 									<p>
 										Veiculação de campanhas de mídias nos maiores portais de<br/> e-commerce do país: <strong>CasasBahia.com.br, Extra.com.br,<br/> Pontofrio.com.br</strong> e <strong>Barateiro.com</strong>. São desenvolvidos planos<br/> personalizados, para atender aos diferentes segmentos e perfis<br/> de públicos desejados por nossos clientes, negociados através da<br/> venda direta ou mídia externa.
 									</p>
@@ -62,16 +62,16 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 logo-list">
-								<a href="#" title="Anuncie no site das Casas Bahia" class="animated zoomIn">
+								<a href="#" title="Anuncie no site das Casas Bahia" class="animated zoomIn" data-aos="flip-right" data-aos-duration="600">
 									<img src="images/logos/logo-casas-bahia.png" alt="Logo Casas Bahia">
 								</a>
-								<a href="#" title="Anuncie no site do Ponto Frio" class="animated zoomIn">
+								<a href="#" title="Anuncie no site do Ponto Frio" class="animated zoomIn" data-aos="flip-right" data-aos-duration="600">
 									<img src="images/logos/logo-ponto-frio.png" alt="Logo Ponto Frio">
 								</a>
-								<a href="#" title="Anuncie no site do Extra" class="animated zoomIn">
+								<a href="#" title="Anuncie no site do Extra" class="animated zoomIn" data-aos="flip-left" data-aos-duration="600">
 									<img src="images/logos/logo-extra.png" alt="Logo Extra">
 								</a>
-								<a href="#" title="Anuncie no site do Barateiro" class="animated zoomIn">
+								<a href="#" title="Anuncie no site do Barateiro" class="animated zoomIn" data-aos="flip-left" data-aos-duration="600">
 									<img src="images/logos/logo-barateiro.png" alt="Logo Barateiro">
 								</a>							
 							</div>
@@ -80,9 +80,9 @@
 				</section><!-- Fim: sites -->	
 
 				<section class="slides">
-					<section id="home">
+					<section id="home" data-prod-id="1" data-prod-name="Formato display">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>FORMATO DISPLAY<span>Home principal</span></h3>
 									<a href="#" class="btn-default orange select-item">
@@ -90,13 +90,13 @@
 									</a>
 								</div>
 							</div>
-							<div class="row slider-content">
+							<div class="row slider-content" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12 text-center">
 									<h4>
 										Mais de <span>400 mil Pageviews </span> diários
 									</h4>
 								</div>
-								<div class="col-md-6 item">
+								<div class="col-sm-6 item" data-aos="fade-right" data-aos-duration="600">
 									<img src="images/formato-display/tela1.png" alt="" class="img-shadow">
 									<strong class="title">SUPERBANNER</strong>
 									<p>
@@ -106,7 +106,7 @@
 										Posição: top / bottom
 									</p>
 								</div>
-								<div class="col-md-6 item">
+								<div class="col-sm-6 item" data-aos="fade-left" data-aos-duration="600">
 									<img src="images/formato-display/tela2.png" alt="" class="img-shadow">
 									<strong class="title">RETÂNGULO</strong>
 									<p>
@@ -115,14 +115,19 @@
 										Peso máximo: 50KB<br/>
 										Posição: Middle
 									</p>
+								</div>
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
 								</div>																	
 							</div>
 						</div>
 					</section>
 					
-					<section id="paginaDeProduto">
+					<section id="paginaDeProduto" data-prod-id="2" data-prod-name="Página de produtos">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>PÁGINA DE PRODUTO<span>Sua exposição na página de produtos</span></h3>
 									<a href="#" class="btn-default orange select-item">
@@ -131,11 +136,11 @@
 								</div>
 							</div>
 							<div class="row slider-content">
-								<div class="col-md-6">
-									<h4 class="medium">
+								<div class="col-sm-6">
+									<h4 class="medium" data-aos="fade-up" data-aos-duration="600">
 										Mais de <span>350 mil páginas</span><br/> diferentes de <span>3 sites</span>,<br/> que podem ser patrocinadas conforme a necessidade
 									</h4>
-									<div class="img-desc">
+									<div class="img-desc hide-mobile" data-aos="fade-right" data-aos-duration="600">
 										<strong class="title">SUPERBANNER</strong>
 										<p>
 											Extensão: .JPG, .GIF, HTML5<br/>
@@ -145,16 +150,30 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-md-6 text-center">
-									<img src="images/pagina-de-produtos/tela1.png" alt="" class="img-shadow">									
-								</div>																	
+								<div class="col-sm-6 text-center" data-aos="fade-left" data-aos-duration="600">
+									<img src="images/pagina-de-produtos/tela1.png" alt="" class="img-shadow img-responsive">
+									<div class="img-desc show-mobile" data-aos="fade-right" data-aos-duration="600">
+										<strong class="title">SUPERBANNER</strong>
+										<p>
+											Extensão: .JPG, .GIF, HTML5<br/>
+											Tamanho: 728x90 pixels<br/>
+											Peso máximo: 50kb<br/>
+											Posição: top / bottom
+										</p>
+									</div>									
+								</div>
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
+								</div>																		
 							</div>
 						</div>
 					</section>
 
-					<section id="busca">
+					<section id="busca" data-prod-id="3" data-prod-name="Busca">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>BUSCA<span>Você no resultado da busca</span></h3>
 									<a href="#" class="btn-default orange select-item">
@@ -163,24 +182,29 @@
 								</div>
 							</div>
 							<div class="row slider-content">
-								<div class="col-md-12 text-center">
+								<div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="600">
 									<h4 class="medium">
 										<span>Lista de palavras-chave referente ao produto</span> da<br/> campanha para impactar quem buscou em nossos sites
 									</h4>
 								</div>
 								<div class="col-md-12 text-center box-img-floating">
-									<img src="images/busca/ic-busca.svg" alt="" class="img1">
-									<img src="images/busca/tela1.png" alt="" class="img-shadow img2">
-									<img src="images/busca/tela2.png" alt="" class="img-shadow img3">
-									<img src="images/busca/tela3.png" alt="" class="img-shadow img4">
+									<img src="images/busca/ic-busca.svg" alt="" class="img1" data-aos="fade-right" data-aos-duration="600">
+									<img src="images/busca/tela1.png" alt="" class="img-shadow img2 img-responsive" data-aos="fade-left" data-aos-duration="600">
+									<img src="images/busca/tela2.png" alt="" class="img-shadow img3" data-aos="fade-left" data-aos-duration="1000">
+									<img src="images/busca/tela3.png" alt="" class="img-shadow img4" data-aos="fade-left" data-aos-duration="1400">
+								</div>	
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
 								</div>																
 							</div>
 						</div>
 					</section>
 
-					<section id="emailMkt">
+					<section id="emailMkt" data-prod-id="4" data-prod-name="E-mail Marketing">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>E-MAIL MARKETING<span>Customizado</span></h3>
 									<a href="#" class="btn-default orange select-item">
@@ -190,12 +214,12 @@
 							</div>
 							<div class="row slider-content">
 								<div class="col-md-12 text-center">
-									<h4 class="medium">
+									<h4 class="medium" data-aos="fade-up" data-aos-duration="600">
 										Criação de <span>e-mail exclusivo com os seus produtos</span> e<br/> <span>base segmentada por interesse de compra</span>
 									</h4>
 								</div>
-								<div class="col-md-12 box-content">
-									<div class="texts">
+								<div class="col-md-12 box-content clearfix">
+									<div class="texts" data-aos="fade-right" data-aos-duration="600">
 										<p>
 											<strong>
 												+ <span>200</span> MIL
@@ -209,15 +233,20 @@
 											de vendas
 										</p>
 									</div>
-									<img src="images/email-mkt/ics-agrupado.svg" alt="" class="">
+									<img src="images/email-mkt/ics-agrupado.svg" alt="" class="hide-mobile" data-aos="fade-left" data-aos-duration="600">
+								</div>	
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
 								</div>																	
 							</div>
 						</div>
 					</section>
 
-					<section id="produtosPatrocinados">
+					<section id="produtosPatrocinados" data-prod-id="5" data-prod-name="Produtos patrocinados">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>PRODUTOS PATROCINADOS<span>Destaque</span></h3>
 									<a href="#" class="btn-default orange select-item">
@@ -226,24 +255,32 @@
 								</div>
 							</div>
 							<div class="row slider-content">
-								<div class="col-md-6">
+								<div class="col-sm-6" data-aos="fade-right" data-aos-duration="600">
 									<h4 class="medium">
 										<span>Destaque de produtos</span><br/> dentro de nossas <span>páginas de<br/> produtos</span> com<br/> direcionamento interno.
 									</h4>
-									<h5>
+									<h5 class="hide-mobile">
 										Ferramenta que possibilita anunciar seus<br/> produtos através de leilão (CPC)
 									</h5>
 								</div>
-								<div class="col-md-6">
-									<img src="images/produtos-patrocinados/tela1.png" alt="" class="img-shadow">									
-								</div>																	
+								<div class="col-sm-6" data-aos="fade-left" data-aos-duration="600">
+									<img src="images/produtos-patrocinados/tela1.png" alt="" class="img-shadow img-responsive">
+									<h5 class="show-mobile">
+										Ferramenta que possibilita anunciar seus<br/> produtos através de leilão (CPC)
+									</h5>									
+								</div>
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
+								</div>																		
 							</div>
 						</div>
 					</section>
 
-					<section id="midiaExterna">
+					<section id="midiaExterna" data-prod-id="6" data-prod-name="Mídia externa">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>MÍDIA EXTERNA</h3>
 									<a href="#" class="btn-default orange select-item">
@@ -252,12 +289,12 @@
 								</div>
 							</div>
 							<div class="row slider-content">
-								<div class="col-md-12 text-center">
+								<div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="600">
 									<h4 class="medium">
 										<span>Google rede display</span> e <span>Google shopping</span>
 									</h4>
 								</div>
-								<div class="col-md-4">									
+								<div class="col-md-4 col-sm-7" data-aos="fade-up" data-aos-duration="600">									
 									<div class="texts">
 										<h5>Google rede display</h5>
 										<p>
@@ -271,24 +308,37 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-md-4 image text-center">									
-									<img src="images/midia-externa/tela1.png" alt="">
-								</div>
-								<div class="col-md-4">									
+								<div class="col-md-4 col-sm-5 show-mobile" data-aos="fade-up" data-aos-duration="1400">									
 									<div class="texts last">
 										<h5>Google search</h5>
 										<p>
 											Os anúncios de texto são exibidos ao lado dos resultados de pesquisa do Google quando as pessoas pesquisam os produtos e serviços que você oferece.
 										</p>
 									</div>
+								</div>
+								<div class="col-md-4 col-sm-5 image text-center" data-aos="fade-up" data-aos-duration="1000">									
+									<img src="images/midia-externa/tela1.png" alt="">
+								</div>
+								<div class="col-md-4 col-sm-5 hide-mobile" data-aos="fade-up" data-aos-duration="1400">									
+									<div class="texts last">
+										<h5>Google search</h5>
+										<p>
+											Os anúncios de texto são exibidos ao lado dos resultados de pesquisa do Google quando as pessoas pesquisam os produtos e serviços que você oferece.
+										</p>
+									</div>
+								</div>	
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
 								</div>																	
 							</div>
 						</div>
 					</section> 
 
-					<section id="redesSociais">
+					<section id="redesSociais" data-prod-id="7" data-prod-name="Redes sociais">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>REDES SOCIAIS</h3>
 									<a href="#" class="btn-default orange select-item">
@@ -297,7 +347,7 @@
 								</div>
 							</div>
 							<div class="row slider-content">
-								<div class="col-md-12 text-center">
+								<div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="600">
 									<h4 class="medium">
 										<span>O destaque certo</span> para <span>seu produto</span>
 									</h4>
@@ -306,12 +356,18 @@
 									</h5>
 								</div>
 								<div class="box-content">
-									<div class="col-md-2 text-right">									
-										<img src="images/redes-sociais/twitter.png" alt="">
+									<div class="col-sm-2 col-xs-4 text-right img" data-aos="fade-right" data-aos-duration="600">
+										<img src="images/redes-sociais/ic-twitter.svg" alt="">
 									</div>
-									<div class="col-md-4">									
+									<div class="col-xs-8 show-mobile">
 										<h6>Twitter</h6>
 										<p>
+											Posts com conteúdo interativo<br/> relacionado aos produtos no Twitter e<br/> links personalizados.
+										</p>
+									</div>
+									<div class="col-sm-4 col-xs-12 numbers" data-aos="fade-right" data-aos-duration="600">									
+										<h6 class="hide-mobile">Twitter</h6>
+										<p class="hide-mobile">
 											Posts com conteúdo interativo<br/> relacionado aos produtos no Twitter e<br/> links personalizados.
 										</p>
 										<div class="desc-text">
@@ -333,12 +389,18 @@
 											</strong>
 										</div>
 									</div>
-									<div class="col-md-2 text-right">									
-										<img src="images/redes-sociais/facebook.png" alt="">
+									<div class="col-sm-2 col-xs-4 text-right img" data-aos="fade-left" data-aos-duration="600">									
+										<img src="images/redes-sociais/ic-facebook.svg" alt="">
 									</div>
-									<div class="col-md-4">									
+									<div class="col-xs-8 show-mobile">
 										<h6>Facebook</h6>
 										<p>
+											Posts com conteúdo interativo<br/> relacionado aos produtos no Facebook<br/> e links personalizados.
+										</p>
+									</div>
+									<div class="col-sm-4 col-xs-12 numbers" data-aos="fade-left" data-aos-duration="600">
+										<h6 class="hide-mobile">Facebook</h6>
+										<p class="hide-mobile">
 											Posts com conteúdo interativo<br/> relacionado aos produtos no Facebook<br/> e links personalizados.
 										</p>
 										<div class="desc-text">
@@ -360,14 +422,19 @@
 											</strong>
 										</div>
 									</div>
-								</div>																	
+								</div>
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
+								</div>																		
 							</div>
 						</div>
 					</section>
 
-					<section id="mobile">
+					<section id="mobile" data-prod-id="8" data-prod-name="Mobile">
 						<div class="container">
-							<div class="row slider-header">
+							<div class="row slider-header" data-aos="fade-up" data-aos-duration="600">
 								<div class="col-md-12">
 									<h3>MOBILE <span>Destaque</span></h3>
 									<a href="#" class="btn-default orange select-item">
@@ -376,13 +443,13 @@
 								</div>
 							</div>
 							<div class="row slider-content">
-								<div class="col-md-12 text-center">
+								<div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="600">
 									<h4 class="medium">
 										<span>Você na palma da mão</span> do seu cliente
 									</h4>
 								</div>
-								<div class="col-md-6">
-									<div class="col-md-7">
+								<div class="col-md-6 col-sm-12">
+									<div class="col-md-7 col-lg-6 col-sm-4" data-aos="fade-right" data-aos-duration="600">
 										<h5>SMS</h5>
 										<p>
 											Disparo exclusivo com seus<br/> produtos e base segmentada,<br/> enviando a mensagem de texto<br/> para o celular dos cliente.
@@ -392,39 +459,43 @@
 											Mensagem enviada ao<br/> destinatário indicando um link<br/> na Web para que ele possa<br/> conferir o conteúdo.
 										</p>
 									</div>
-									<div class="col-md-5">
+									<div class="col-md-5 col-lg-6 col-sm-4 img hide-mobile" data-aos="fade-up" data-aos-duration="1400">
 										<img src="images/mobile/tela1.png" alt="">
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="col-md-6">
+									<div class="col-md-6 col-sm-4 img img-mobile" data-aos="fade-up" data-aos-duration="1400">
 										<img src="images/mobile/tela2.png" alt="">
 									</div>
-									<div class="col-md-6 last text-center">
-										<p>
+								</div>
+								<div class="col-md-6 col-sm-12 hide-mobile">
+									<div class="col-md-6 img img-desk" data-aos="fade-up" data-aos-duration="1400">
+										<img src="images/mobile/tela2.png" alt="">
+									</div>
+									<div class="col-md-6 col-sm-12 last text-center">
+										<p data-aos="zoom-in" data-aos-duration="600">
 											<i class="fa fa-eye" aria-hidden="true"></i><br/>
 											Um celular é conferido <br/>150X ao dia
 										</p>
-										<p>
+										<p data-aos="zoom-in" data-aos-duration="1000">
 											<i class="fa fa-clock-o" aria-hidden="true"></i><br/>
 											Mensagens entregues<br/> diariamente
 										</p>
-										<p>
+										<p data-aos="zoom-in" data-aos-duration="1400">
 											<i class="fa fa-envelope-o" aria-hidden="true"></i><br/>
 											Até 98% dos SMS’s<br/> são lidos
 										</p>
 									</div>
+								</div>	
+								<div class="col-md-12 bt-mobile">
+									<a href="#" class="btn-default orange select-item">
+										<i class="fa fa-check" aria-hidden="true"></i> TENHO INTERESSE
+									</a>
 								</div>																
 							</div>
 						</div>
 					</section> 
-
-					<!-- <section id="midia">hjk</section>
-					<section id="redesSociais">fgh</section>
-					<section id="mobileDestaque">werwer</section> -->
 				</section>
 
-				<div class="menu">					
+				<div class="menu menu-hidden">					
 					<div class="container list-navigation">
 						<div class="row">
 							<div class="col-md-12 text-center title">
@@ -433,28 +504,28 @@
 							<div class="col-md-12">
 								<nav>
 									<ul>
-										<li class="col-md-6">
+										<li class="col-md-6 col-sm-6 col-xs-12">
 											<a href="#home">Formato display</a>
 										</li>
-										<li class="col-md-6">
+										<li class="col-md-6 col-sm-6 col-xs-12">
 											<a href="#produtosPatrocinados">Produtos patrocinados</a>
 										</li>
-										<li class="col-md-6">
+										<li class="col-md-6 col-sm-6 col-xs-12">
 											<a href="#paginaDeProduto">Página de produto</a>
 										</li>
-										<li class="col-md-6">
+										<li class="col-md-6 col-sm-6 col-xs-12">
 											<a href="#midiaExterna">Mídia externa</a>
 										</li>
-										<li class="col-md-6">
+										<li class="col-md-6 col-sm-6 col-xs-12">
 											<a href="#busca">Busca</a>
 										</li>
-										<li class="col-md-6">
-											<a href="#">Redes sociais</a>
+										<li class="col-md-6 col-sm-6 col-xs-12">
+											<a href="#redesSociais">Redes sociais</a>
 										</li>
-										<li class="col-md-6">
+										<li class="col-md-6 col-sm-6 col-xs-12">
 											<a href="#emailMkt">E-mail Marketing</a>
 										</li>
-										<li class="col-md-6">
+										<li class="col-md-6 col-sm-6 col-xs-12">
 											<a href="#mobile">Mobile</a>
 										</li>
 									</ul>
@@ -466,8 +537,11 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
-									<a href="#" id="openMenu" class="navigation"> ESCOLHA UM PRODUTO </a>
-									<!-- <a href="#animatedModal" id="openMenu" class="navigation"> ESCOLHA UM PRODUTO </a> -->
+									<a href="#" id="openMenu" class="navigation"> ESCOLHA UM PRODUTO <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<a href="#" id="openModal" class="count-selected">
+										<span class="tooltip">Clique aqui para enviar sua solicitação.</span>
+										<span class="count">0</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -476,15 +550,22 @@
 				<div id="layer"></div>
 			</div>
 
-			<div style="display: none;" id="animatedModal" class="animated-modal">
-				<h2>Hello!</h2>
-				<p>This is animated content! Cool, right?</p>
+			<div style="display: none;" id="modalItems" class="animated-modal">
+				<div id="selectedItemList">
+					<h2>Tenho interesse nas ferramentas abaixo:</h2>
+					<form action="">
+						<ul id="itemsSelected"></ul>
+						<div class="controls">
+							<button class="btn-default orange">SOLICITAR CONTATO</button>
+						</div>
+					</form>
+				</div>
 			</div>
 
            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-           <script src="js/jquery.fancybox.min.js"></script>
-           <script src="js/jquery.cycle2.js"></script>
-           <script src="js/main.js"></script>
+
+
+           <script src="dist/js/main-min.js"></script>
            <script src="js/index.js"></script>
    
        </body>
